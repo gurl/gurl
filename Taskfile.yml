@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+vars:
+  APPLICATION_NAME: gurl
+
+tasks:
+  build:
+    cmds:
+      - go build -o bin/{{.APPLICATION_NAME}}
