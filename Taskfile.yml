@@ -8,3 +8,8 @@ tasks:
   build:
     cmds:
       - go build -o bin/{{.APPLICATION_NAME}}
+    sources:
+      - "**/*.go"
+    generates:
+      - bin/{{.APPLICATION_NAME}}
+    watch: true
